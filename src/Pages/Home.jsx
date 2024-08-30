@@ -66,7 +66,7 @@ const Home = () => {
                     />
                     <span className="text-sm font-semibold">{course}</span>
                   </div>
-                  <button className="bg-yellow-100 px-3 py-1 rounded-lg text-sm">
+                  <button className="bg-yellow-100 border-2 hover:border-yellow-200 border-yellow-200 px-3 py-1 rounded-lg text-sm">
                     View Course
                   </button>
                 </div>

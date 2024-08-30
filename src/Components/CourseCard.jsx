@@ -5,17 +5,13 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const CourseCard = ({ course, booked, days }) => {
   return (
-    <div className="p-4 rounded-xl bg-yellow-100">
+    <div className="p-4 hover:shadow-md transition-all rounded-xl bg-yellow-100">
       <img
-        src={`https://via.placeholder.com/150?text=Course+Image`}
+        src={`https://via.placeholder.com/190?text=Course+Image`}
         alt="Course"
-        className="mb-2 rounded-lg"
+        className="mb-2 hover:scale-105 hover:cursor-pointer transition-all rounded-lg"
       />
-      <h3 className="font-bold mb-2">{course}</h3>
-      <div className="flex justify-between text-sm">
-        <span>Booked: {booked}</span>
-        <span>Days: {days}</span>
-      </div>
+      <h3 className="font-bold text-justify mb-2">{course}</h3>
     </div>
   );
 };

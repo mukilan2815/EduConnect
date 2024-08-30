@@ -20,17 +20,18 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faHome} className="mr-2" /> Dashboard
           </a>
           <a
-            href="/"
-            className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2"
-          >
-            <FontAwesomeIcon icon={faUser} className="mr-2" /> Profile
-          </a>
-          <a
             href="#"
             className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2"
           >
             <FontAwesomeIcon icon={faBook} className="mr-2" /> Courses
           </a>
+          <a
+            href="/"
+            className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2"
+          >
+            <FontAwesomeIcon icon={faUser} className="mr-2" /> Profile
+          </a>
+
           <a
             href="#"
             className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2"
