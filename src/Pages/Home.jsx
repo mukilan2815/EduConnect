@@ -3,7 +3,7 @@ import Sidebar from "../Components/Sidebar";
 import ProfileCard from "../Components/ProfileCard";
 import NewsSection from "../Components/NewsSection";
 import LearnMoreSection from "../Components/LearnMoreSection";
-import "@fontsource/roboto"; // Importing Google Font
+import "@fontsource/roboto";
 
 const Home = () => {
   const popularCourses = [
@@ -54,7 +54,6 @@ const Home = () => {
             <Sidebar />
           </div>
 
-          {/* Main Content */}
           <div className="w-3/5 px-6">
             <h2 className="text-xl font-bold mb-4">Courses</h2>
             <div className="space-y-4">
@@ -63,7 +62,6 @@ const Home = () => {
                   key={index}
                   className="bg-white p-4 rounded-lg shadow-lg border border-gray-200"
                 >
-                  {/* Course Card */}
                   <div
                     onClick={() => handleCourseClick(index)}
                     className={`flex items-center justify-between ${course.color} p-4 rounded-lg cursor-pointer`}
@@ -85,7 +83,6 @@ const Home = () => {
                     </span>
                   </div>
 
-                  {/* Conditionally render the videos section if this course is expanded */}
                   {expandedCourseIndex === index && (
                     <div className="mt-4 bg-gray-50 p-4 rounded-lg">
                       <h3 className="text-lg font-bold mb-2">Videos</h3>
@@ -111,7 +108,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right Sidebar */}
           <div className="w-1/5 pl-6">
             <NewsSection />
             <div className="mt-6">
